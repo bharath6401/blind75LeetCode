@@ -1,3 +1,18 @@
+arr=[2,7,11,2]
+arrIndexDic={}
+k=4
+newDic={}
+output=-1
+for index in range(len(arr)):
+    target=k-arr[index]
+    if(arr[index] in newDic.keys()):
+        print([newDic[arr[index]],index])
+    else:
+        newDic[k-arr[index]]=index
+
+
+# recursive method
+
 def twoSum(arr,k,i,j=0):
     
     if(i>=len(arr)-1):
